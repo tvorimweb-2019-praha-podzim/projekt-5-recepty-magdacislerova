@@ -47,22 +47,22 @@ notebook/pc:
 /* tvoje styly sem */
 
 
-.hlavni-recept{
+.hlavni-recept {
   background-image: url(images/burger.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 200px;
-  min-width: 100%;
+  width: 100%;
   position: relative;
   border-bottom: 2px solid white;
 }
 
-.hlavni-recept h2{
+.hlavni-recept h2 {
   font-size: 28px;
 }
 
-.recept2{
+.recept2 {
   background-image: url(images/sushi.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -73,7 +73,7 @@ notebook/pc:
   border-bottom: 2px solid white;
 }
 
-.recept3{
+.recept3 {
   background-image: url(images/rajcata.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -84,7 +84,7 @@ notebook/pc:
   border-bottom: 2px solid white;
 }
 
-.recept4{
+.recept4 {
   background-image: url(images/kure.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -95,7 +95,7 @@ notebook/pc:
   border-bottom: 2px solid white;
 }
 
-.recept5{
+.recept5 {
   background-image: url(images/grilovani.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -127,25 +127,13 @@ notebook/pc:
   padding: 10px;
 }
 
-@media (min-width: 860px) {
-  .hlavni-recept {
-    min-height: 400px;
-    width: auto;
-  }
-  .recept-kategorie,
-  .recept-komentare,
-  .recept-nazev {
-    padding: 20px;
-  }
-}
-
 @media (min-width: 480px) {
-  .hlavni-recept{
+  .hlavni-recept {
     min-height: 250px;
     width: auto;
   }
 
-  .hlavni-recept h2{
+  .hlavni-recept h2 {
     font-size: 36px;
   }
 
@@ -155,7 +143,7 @@ notebook/pc:
     padding: 20px;
   }
 
-  h2{
+  h2 {
     font-size: 22px;
   }
 
@@ -180,6 +168,47 @@ notebook/pc:
   .recept4 {
     border-right: 2px solid white;
     border-bottom: none;
+  }
+
+}
+
+@media (min-width: 860px) {
+  
+  .hlavni-recept {
+    min-height: 400px;
+    width: 33.33%;
+    float: left;
+    border-bottom: none;
+    border-right: 2px solid white;
+    }
+
+  .hlavni-recept h2 {
+    font-size: 48px;
+  }
+
+  .sloupec {
+    display: flex;
+    display: column;
+    width: 33.33%;
+  }
+
+  .recept-kategorie,
+  .recept-komentare,
+  .recept-nazev {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .recept2,
+  .recept3,
+  .recept4,
+  .recept5 {
+    min-height: 200px;
+    width: 33.33%;
+    float: right;
   }
 
 }
