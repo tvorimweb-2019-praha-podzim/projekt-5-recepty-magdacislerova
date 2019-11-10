@@ -48,7 +48,7 @@ notebook/pc:
 
 
 .hlavni-recept {
-  background-image: url(images/burger.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/burger.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -62,8 +62,7 @@ notebook/pc:
   font-size: 28px;
 }
 
-.recept2 {
-  background-image: url(images/sushi.jpg);
+.recept {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -73,36 +72,20 @@ notebook/pc:
   border-bottom: 2px solid white;
 }
 
+.recept2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/sushi.jpg);
+  }
+
 .recept3 {
-  background-image: url(images/rajcata.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 90px;
-  min-width: 100%;
-  position: relative;
-  border-bottom: 2px solid white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/rajcata.jpg);
 }
 
 .recept4 {
-  background-image: url(images/kure.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 90px;
-  min-width: 100%;
-  position: relative;
-  border-bottom: 2px solid white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/kure.jpg);
 }
 
 .recept5 {
-  background-image: url(images/grilovani.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 90px;
-  min-width: 100%;
-  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/grilovani.jpg);
 }
 
 .recept-kategorie {
@@ -202,10 +185,7 @@ notebook/pc:
     font-size: 28px;
   }
 
-  .recept2,
-  .recept3,
-  .recept4,
-  .recept5 {
+  .recept  { 
     min-height: 200px;
     width: 33.33%;
     float: right;
